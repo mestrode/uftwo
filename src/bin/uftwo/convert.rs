@@ -126,7 +126,7 @@ fn uf2_to_bin(input: PathBuf, output: PathBuf) -> anyhow::Result<()> {
     let mut total_blocks = 0;
 
     loop {
-        let mut buf = [0; 512];
+        let mut buf = [0; core::mem::size_of::<Block>()];
 
         let bytes = input_file.read(&mut buf)?;
 
