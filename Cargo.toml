@@ -1,15 +1,15 @@
 [package]
-name = "uftwo"
+name = "uf2-file"
 description = "A library for working with the UF2 file format."
-version = "0.1.3"
+version = "0.1.0"
 edition = "2021"
 license = "MPL-2.0"
-repository = "https://github.com/umi-eng/uftwo"
+repository = "https://github.com/mestrode/uf2-file"
 
 exclude = ["example.uf2"]
 
 [[bin]]
-name = "uftwo"
+name = "uf2-file"
 required-features = ["cli"]
 
 [dependencies]
